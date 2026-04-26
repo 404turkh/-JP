@@ -2,7 +2,7 @@
 // @name         @5harambro
 // @version      3
 // @description  Bots for Agar.io - Working on Delta extension
-// @icon         https://raw.githubusercontent.com/404turkh/404/main/icon.png
+// @icon         https://raw.githubusercontent.com/404turkh/-JP/main/icon.png
 // @match        *://agar.io/*
 // @run-at       document-start
 // @grant        none
@@ -37,7 +37,7 @@
 
     const OBF = Object.freeze({
         title: "QDVoYXJhbWJybw==",
-        icon: "aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tLzQwNHR1cmtoLzQwNC9tYWluL2ljb24ucG5n",
+        icon: "aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tLzQwNHR1cmtoLy1KUC9tYWluL2ljb24ucG5n",
         instagram: "aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS81aGFyYW1icm8=",
         youtube: "aHR0cHM6Ly95b3V0dWJlLmNvbS9ANWhhcmFtYnJv",
         website: "aHR0cHM6Ly9oYXJhbWJybzUuY29t",
@@ -53,7 +53,7 @@
         const buf = new TextEncoder().encode(data);
         const hashBuf = await crypto.subtle.digest("SHA-256", buf);
         const hash = Array.from(new Uint8Array(hashBuf)).map(b => b.toString(16).padStart(2, "0")).join("");
-        return hash === "987d6943deda7601ec7dc7d50437548895eea0062bb7cbc2c4905d3bff8136d2";
+        return hash === "5ac93f5b61138b54f1fb483c0afa907e0b23c8459f696209c14e2f96bc9c5757";
     }
 
     if (!(await secureBoot())) { kill("integrity"); }
